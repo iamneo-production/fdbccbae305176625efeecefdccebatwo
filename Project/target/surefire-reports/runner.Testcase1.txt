@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: runner.Testcase1
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.696 s - in runner.Testcase1
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 8, Time elapsed: 9.404 s <<< FAILURE! - in runner.Testcase1
+beforeMethod(runner.Testcase1)  Time elapsed: 9.198 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 4.181
+  (Session info: chrome=113.0.5672.63)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.20'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [af2e25dedabc4a558bc43882a149fea3, get {url=http://dbankdemo.com/bank}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.63, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /tmp/.com.google.Chrome.DLUjnj}, goog:chromeOptions: {debuggerAddress: localhost:38003}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.3:4444/sessio..., se:cdpVersion: 113.0.5672.63, se:vnc: ws://172.17.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af2e25dedabc4a558bc43882a149fea3
+	at runner.Testcase1.beforeMethod(Testcase1.java:197)
+
